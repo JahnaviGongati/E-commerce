@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Cart - ShopEasy</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- =========================
+         NAVIGATION BAR
+    ========================== -->
+
+    <header class="navbar">
+
+        <div class="logo">
+            ShopEasy
+        </div>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="products.html">Products</a>
+            <a href="cart.html">Cart 🛒</a>
+            <a href="login.html" id="cartLoginLink">Login</a>
+            <a href="signup.html" id="cartSignupLink">Sign Up</a>
+
+            <button
+                id="cartLogoutBtn"
+                style="display: none;"
+            >
+                Logout
+            </button>
+        </nav>
+
+    </header>
+
+
+    <!-- =========================
+         CART
+    ========================== -->
+
+    <main class="cart-page">
+
+        <div class="cart-header">
+
+            <h1>Your Shopping Cart</h1>
+
+            <p>
+                Review your products before checkout.
+            </p>
+
+        </div>
+
+
+        <!-- CART ITEMS -->
+
+        <div id="cartContainer">
+
+            <!-- Cart items will appear here -->
+
+        </div>
+
+
+        <!-- CART SUMMARY -->
+
+        <div
+            id="cartSummary"
+            class="cart-summary"
+        >
+
+            <h2>
+                Cart Summary
+            </h2>
+
+            <p>
+                Total Items:
+                <span id="cartItemCount">
+                    0
+                </span>
+            </p>
+
+            <p>
+                Total Amount:
+                ₹<span id="cartTotal">
+                    0
+                </span>
+            </p>
+
+            <button
+                id="checkoutBtn"
+                class="checkout-btn"
+            >
+                Proceed to Checkout
+            </button>
+
+        </div>
+
+    </main>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <p>
+            © 2026 ShopEasy. All Rights Reserved.
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

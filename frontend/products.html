@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Products - ShopEasy</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- =========================
+         NAVIGATION BAR
+    ========================== -->
+
+    <header class="navbar">
+
+        <div class="logo">
+            ShopEasy
+        </div>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="products.html">Products</a>
+            <a href="cart.html">Cart 🛒</a>
+            <a href="login.html" id="productLoginLink">Login</a>
+            <a href="signup.html" id="productSignupLink">Sign Up</a>
+
+            <button
+                id="productLogoutBtn"
+                style="display: none;"
+            >
+                Logout
+            </button>
+        </nav>
+
+    </header>
+
+
+    <!-- =========================
+         PRODUCTS SECTION
+    ========================== -->
+
+    <main class="products-page">
+
+        <div class="products-header">
+
+            <h1>Our Products</h1>
+
+            <p>
+                Explore our latest products.
+            </p>
+
+        </div>
+
+
+        <!-- SEARCH AND FILTER -->
+
+        <div class="product-controls">
+
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Search products..."
+            >
+
+            <select id="categoryFilter">
+
+                <option value="all">
+                    All Categories
+                </option>
+
+            </select>
+
+        </div>
+
+
+        <!-- PRODUCTS -->
+
+        <div
+            id="productsContainer"
+            class="products-grid"
+        >
+
+            <p>
+                Loading products...
+            </p>
+
+        </div>
+
+    </main>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <p>
+            © 2026 ShopEasy. All Rights Reserved.
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
